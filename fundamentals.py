@@ -68,31 +68,52 @@ import random
 
 
 
-x = 20
-y = 3
-print(x + y)
-print(x - y)
-print(x * y)
-print(x / y)
-print(x // y)
-print(x % y)
-print(x ** y)
-print(pow(x,y))
-print(abs(-15))
-print(round(-15.2))
-print(round(-15.6))
-print(round(15.2))
-print(round(15.6))
-print(int("256") + 1)
+# x = 20
+# y = 3
+# print(x + y)
+# print(x - y)
+# print(x * y)
+# print(x / y)
+# print(x // y)
+# print(x % y)
+# print(x ** y)
+# print(pow(x,y))
+# print(abs(-15))
+# print(round(-15.2))
+# print(round(-15.6))
+# print(round(15.2))
+# print(round(15.6))
+# print(int("256") + 1)
 
-print(7 % 3)
-print(-7 % 3)
-print(7 % -3)
-print(-7 % -3)
+# print(7 % 3)
+# print(-7 % 3)
+# print(7 % -3)
+# print(-7 % -3)
 
-num1 = int(input("Enter number 1: "))
-num2 = int(input("Enter number 2: "))
-print(f"{num1} + {num2} = {num1 + num2}")
-print(f"{num1} - {num2} = {num1 - num2}")
-print(f"{num1} * {num2} = {num1 * num2}")
-print(f"{num1} / {num2} = {num1 / num2}")
+# num1 = int(input("Enter number 1: "))
+# num2 = int(input("Enter number 2: "))
+# print(f"{num1} + {num2} = {num1 + num2}")
+# print(f"{num1} - {num2} = {num1 - num2}")
+# print(f"{num1} * {num2} = {num1 * num2}")
+# print(f"{num1} / {num2} = {num1 / num2}")
+
+
+
+# user_weather = input("Is it sunny or raining? ")
+# user_mood = input("Are you happy or tired? ")
+
+# if(user_weather == "sunny" and user_mood == "happy"):
+#     print("Go for a hike!")
+# else:
+#     print("Relax indoors.")
+
+random_number = random.randint(1,10)
+user_input = int(input())
+if(random_number > user_input):
+    print("too low")
+    user_input = int(input())
+elif(random_number < user_input):
+    print("too high")
+    user_input = int(input())
+else:
+    print("Congratulations you guessed corectly")
