@@ -194,29 +194,44 @@ import random
 
 
 
-letters = ["aaaaa", "bbbbb", "ccccc", "ddddd", "eeeee"]
-for item in letters:
-    print(item)
-print("========================")
-for i in range(5):
-    print(i)
-print("========================")
-for i in range(2,5):
-    print(i)
-print("========================")
-for i in range(7,16,3):
-    print(i)
-print("========================")
+# letters = ["aaaaa", "bbbbb", "ccccc", "ddddd", "eeeee"]
+# for item in letters:
+#     print(item)
+# print("========================")
+# for i in range(5):
+#     print(i)
+# print("========================")
+# for i in range(2,5):
+#     print(i)
+# print("========================")
+# for i in range(7,16,3):
+#     print(i)
+# print("========================")
     
-num = 2
-while(num<20):
-    print(num)
-    num+=2
-print("========================")
+# num = 2
+# while(num<20):
+#     print(num)
+#     num+=2
+# print("========================")
 
-for i in range(1, 31):
-    if(i%3==0):
-        continue
-    if(i>25):
-        break
-    print(i)
+# for i in range(1, 31):
+#     if(i%3==0):
+#         continue
+#     if(i>25):
+#         break
+#     print(i)
+
+
+
+def introduce_yourself(name, hobby):
+    print(f"Hello, {name}! As you mentioned your favourite hobby is {hobby}")
+
+introduce_yourself("Dhanushka", "Coding")
+
+def squareNum(*numbers):
+    newList = []
+    for i in numbers:
+        newList.append(i**2)
+    return newList
+
+print(squareNum(3, 99, 12, 1, 7))
