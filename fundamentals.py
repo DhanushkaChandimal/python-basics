@@ -120,74 +120,103 @@ import random
 
 
 
-my_list = [1, 2.34, "Srtring", True, 3, 4, 5, 6]
+# my_list = [1, 2.34, "Srtring", True, 3, 4, 5, 6]
 
-print(my_list[0])
-print(my_list[1])
-print(my_list[-1])
-print(my_list[-2])
-print(my_list[-3])
+# print(my_list[0])
+# print(my_list[1])
+# print(my_list[-1])
+# print(my_list[-2])
+# print(my_list[-3])
 
-my_list.append("del")
-print(my_list)
+# my_list.append("del")
+# print(my_list)
 
-my_list.insert(2,"del")
-print(my_list)
+# my_list.insert(2,"del")
+# print(my_list)
 
-my_list.remove("del") # remove only first matching item
-print(my_list)
+# my_list.remove("del") # remove only first matching item
+# print(my_list)
 
-del my_list[0]
-print(my_list)
+# del my_list[0]
+# print(my_list)
 
-print(my_list.pop(1))
-print(my_list)
+# print(my_list.pop(1))
+# print(my_list)
 
-print(my_list[1:5])
-print(my_list[:3])
-print(my_list[3:])
-print(my_list[3:3])
+# print(my_list[1:5])
+# print(my_list[:3])
+# print(my_list[3:])
+# print(my_list[3:3])
 
-fruits = ["apple", "banana", "cherry", "date"]
-print(fruits[0])
-print(fruits[-1])
-fruits.append("elderberry")
-print(fruits)
-fruits.insert(1, "blueberry")
-print(fruits)
-fruits.remove("banana")
-print(fruits)
-del fruits[0]
-print(fruits)
-citrus_fruits = fruits[1:3]
-print(citrus_fruits)
+# fruits = ["apple", "banana", "cherry", "date"]
+# print(fruits[0])
+# print(fruits[-1])
+# fruits.append("elderberry")
+# print(fruits)
+# fruits.insert(1, "blueberry")
+# print(fruits)
+# fruits.remove("banana")
+# print(fruits)
+# del fruits[0]
+# print(fruits)
+# citrus_fruits = fruits[1:3]
+# print(citrus_fruits)
 
-print(len(fruits))
-print(min(fruits))
-print(max(fruits))
+# print(len(fruits))
+# print(min(fruits))
+# print(max(fruits))
 
-numbers = [55, 1, 5, 3, -50, -2]
-print(numbers)
-print(len(numbers))
-print(min(numbers))
-print(max(numbers))
-numbers.sort()
-print(numbers)
-numbers.reverse()
-print(numbers)
-print(numbers + fruits)
-numbers.extend(fruits)
-print(numbers)
+# numbers = [55, 1, 5, 3, -50, -2]
+# print(numbers)
+# print(len(numbers))
+# print(min(numbers))
+# print(max(numbers))
+# numbers.sort()
+# print(numbers)
+# numbers.reverse()
+# print(numbers)
+# print(numbers + fruits)
+# numbers.extend(fruits)
+# print(numbers)
 
-nested_list = [[0, 1, 2], [11, 12, 13], [21, 22, 23]]
-print(nested_list)
-print(nested_list[1])
-print(nested_list[1][2])
+# nested_list = [[0, 1, 2], [11, 12, 13], [21, 22, 23]]
+# print(nested_list)
+# print(nested_list[1])
+# print(nested_list[1][2])
 
-favourites_books = []
-favourites_books.append(input("Enter your first favourite book: "))
-favourites_books.append(input("Enter your second favourite book: "))
-favourites_books.append(input("Enter your third favourite book: "))
-print(favourites_books)
-favourites_books.sort()
-print(favourites_books)
+# favourites_books = []
+# favourites_books.append(input("Enter your first favourite book: "))
+# favourites_books.append(input("Enter your second favourite book: "))
+# favourites_books.append(input("Enter your third favourite book: "))
+# print(favourites_books)
+# favourites_books.sort()
+# print(favourites_books)
+
+
+
+letters = ["aaaaa", "bbbbb", "ccccc", "ddddd", "eeeee"]
+for item in letters:
+    print(item)
+print("========================")
+for i in range(5):
+    print(i)
+print("========================")
+for i in range(2,5):
+    print(i)
+print("========================")
+for i in range(7,16,3):
+    print(i)
+print("========================")
+    
+num = 2
+while(num<20):
+    print(num)
+    num+=2
+print("========================")
+
+for i in range(1, 31):
+    if(i%3==0):
+        continue
+    if(i>25):
+        break
+    print(i)
