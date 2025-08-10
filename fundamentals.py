@@ -223,15 +223,49 @@ import random
 
 
 
-def introduce_yourself(name, hobby):
-    print(f"Hello, {name}! As you mentioned your favourite hobby is {hobby}")
+# def introduce_yourself(name, hobby):
+#     print(f"Hello, {name}! As you mentioned your favourite hobby is {hobby}")
 
-introduce_yourself("Dhanushka", "Coding")
+# introduce_yourself("Dhanushka", "Coding")
 
-def squareNum(*numbers):
-    newList = []
-    for i in numbers:
-        newList.append(i**2)
-    return newList
+# def squareNum(*numbers):
+#     newList = []
+#     for i in numbers:
+#         newList.append(i**2)
+#     return newList
 
-print(squareNum(3, 99, 12, 1, 7))
+# print(squareNum(3, 99, 12, 1, 7))
+
+
+# try:
+#     num1 = int(input("Number 1: "))
+#     num2 = int(input("Number 2: "))
+#     print(num1/num2)
+# except ValueError:
+#     print("Please enter numbers only")
+# except ZeroDivisionError:
+#     print("Can't divide by zero")
+    
+# try:
+#     x = int(input("Enter a number: "))
+#     result = 10 / x
+# except (ValueError, ZeroDivisionError) as e:
+#     print(f"An error occurred: {e}")
+# else:
+#     print(f"The result is {result}")
+# finally:
+#     print("Execution complete!")
+
+account_balance = 1500
+try:
+    amount = float(input("Enter amount: "))
+    if(amount<0):
+        print("Enter positive amount!")
+    elif(amount>account_balance):
+        print(f"Unsufficirnt balance.")
+    else:
+        account_balance-=amount
+except ValueError:
+    print("Enter numbers only!")
+finally:
+    print(f"Your account balance is {account_balance}")
